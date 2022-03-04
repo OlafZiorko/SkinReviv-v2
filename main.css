@@ -1,0 +1,136 @@
+:root {
+  /* BASIC COLORS */
+  --clr-brown: hsla(30, 7%, 16%, 0.753);
+  --clr-brown: hsl(18, 8%, 24%);
+  --clr-cream: hsl(18, 62%, 96%);
+  --clr-dark-cream: hsl(26, 8%, 82%);
+  --clr-gold: hsl(41, 66%, 72%);
+  --clr-orange: rgb(172, 101, 70);
+  --clr-text: hsl(270, 2%, 21%);
+  --clr-whiteop: hsla(0, 0%, 100%, 0.787);
+  --clr-white: hsl(0, 0%, 100%);
+
+  /*FONTS FOR HEADINGS AND WEIGHTS */
+  --fn-fm: "Playfair Display", serif;
+  --fnt-wght-400: 400;
+  --fnt-wght-500: 500;
+
+  /*FONTS FOR PARAGRAPHS AND WEIGHTS */
+  --fn-fm-para: "Roboto", sans-serif;
+  --fnt-wght-para-100: 100;
+  --fnt-wght-para-400: 400;
+  --fnt-wght-para-500: 500;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: none;
+}
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--fn-fm-para);
+  height: 100%;
+}
+
+.main__navigation {
+  background: var(--clr-brown);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 2rem 1rem;
+  z-index: 10;
+}
+.navigation--list {
+  display: none;
+}
+.navigation--list .item {
+  padding-top: 3.1rem;
+}
+.navigation--list .item a {
+  font-family: var(--fn-fm-para);
+  font-weight: var(--fnt-wght-para-400);
+  font-size: 1.45rem;
+  padding: 0 1rem;
+  color: var(--clr-dark-cream);
+}
+
+@media screen and (min-width: 550px) {
+  .navigation--list {
+    display: flex;
+  }
+}
+.company--name {
+  font-family: var(--fn-fm);
+  font-weight: var(--fnt-wght-500);
+  font-size: 4rem;
+  color: var(--clr-gold);
+  position: relative;
+}
+.company--name::before {
+  bottom: -1.2rem;
+  content: "Katarzyna Ziorko";
+  display: block;
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  font-family: var(--fn-fm);
+  font-weight: var(--fnt-wght-400);
+  left: 0;
+  letter-spacing: 1.5px;
+  position: absolute;
+  word-spacing: 0.2rem;
+}
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+.burger--menu {
+  padding-top: 1rem;
+}
+.fa {
+  font-size: 2rem;
+  color: var(--clr-gold);
+}
+main {
+  z-index: 1;
+}
+
+/*HERO SECTION */
+
+.hero--image--wrapper {
+  background-image: url(./images/beauty.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1.5rem;
+  min-height: 400px;
+}
+
+.hero--appointment {
+  background-color: var(--clr-whiteop);
+  border-radius: 0.3rem;
+  color: var(--clr-brown);
+  font-family: var(--fn-fm-para);
+  font-weight: var(--fnt-wght-para-300);
+  padding: 1.5em 2em;
+  transition: all 200ms ease-in;
+}
+
+.hero--appointment:hover {
+  background-color: var(--clr-white);
+}
