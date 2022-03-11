@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@100;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@200;400;600&display=swap"
       rel="stylesheet"
     />
     <script
@@ -16,30 +16,144 @@
     ></script>
     <title>Skin REVIV || Katarzyna Ziorko</title>
     <link rel="stylesheet" href="main.css" />
+    <script src="./main.js" defer></script>
   </head>
   <body>
+    <!--DROPDOWN WRAPPER-->
+    <nav class="dropdown__wrapper" aria-label="dropdown navigation">
+      <div class="dropdown__nav__header">
+        <h1 class="dropdown--title"><a href="../index.html"></a>Skin Reviv</h1>
+        <!--DROPDOWN BURGERMENU-->
+        <div class="dropdown__burger__menu">
+          <div class="b1"></div>
+          <div class="b2"></div>
+          <div class="b3"></div>
+        </div>
+      </div>
+      <!--DROP DOWN MENU LIST-->
+      <section class="dropdown__menus">
+        <div class="l1">
+          <h2 class="dropdown_l--title">Poznaj Nas</h2>
+          <ul class="dropdown__menu">
+            <li class="dropdown__menu--item">
+              <a href="#">O nas</a>
+            </li>
+            <li class="dropdown__menu--item">
+              <a href="#appointment">Konsultacje</a>
+            </li>
+            <li class="dropdown__menu--item">
+              <a href="#page__footer">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+
+        <!--DROP DOWN MENU LIST TWO-->
+        <div class="l2">
+          <h2 class="dropdown_l--title">Zabiegi</h2>
+          <ul class="dropdown__menu">
+            <li class="dropdown__menu--item">
+              <a href="./sites/pdo.html">Nici PDO </a>
+            </li>
+            <li class="dropdown__menu--item">
+              <a href="./sites/peeling.html">PEELINGI CHEMICZNE</a>
+            </li>
+            <li class="dropdown__menu--item">
+              <a href="#">WYPEŁNIANIE UST</a>
+            </li>
+            <li class="dropdown__menu--item">
+              <a href="./sites/mezo.html">Mezoterapia</a>
+            </li>
+            <li class="dropdown__menu--item">
+              <a href="./sites/stymulatory.html"
+                >STYMULATORY TKANKOWE I REDERMALIZATORY</a
+              >
+            </li>
+            <li class="dropdown__menu--item">
+              <a href="./sites/osocze.html">PREPARATY AUTOLOGICZNE</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--DROP DOWN MENU LIST CONTACT & ADRESS-->
+      <div class="dropdown--details">
+        <span class="dropdown__contact">Skin REVIV 731-262-134</span>
+        <span class="dropdown__adress">
+          <br />Orzesze ul.Świętego Wawrzyńca 64</span
+        >
+      </div>
+      <!--DROP DOWN MENU SOCIAL MEDIA-->
+      <ul class="dropdown__social__media" aria-label="social media navigation">
+        <li class="media--item">
+          <a href="https://www.facebook.com/SkinReviv/"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+        </li>
+        <li class="media--item">
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </li>
+        <li class="media--item">
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+        </li>
+      </ul>
+    </nav>
     <!--MAIN PAGE CONTENT-->
     <div class="page__wrapper">
-      <!--HEADER SECTION-->
-
-      <nav class="main__navigation">
-        <h1><a href="index.html" class="company--name">Skin Reviv</a></h1>
-
-        <ul class="navigation--list">
-          <li class="item">
+      <header class="page__header" aria-label="page header">
+        <!--PAGE TITLE-->
+        <a href="index.html" class="company--title">Skin Reviv</a>
+        <!--BURGER MENU-->
+        <div class="burger__menu">
+          <div class="b1"></div>
+          <div class="b2"></div>
+          <div class="b3"></div>
+        </div>
+      </header>
+      <!--MAIN NAVIGATION -->
+      <nav class="main__page__navigation" aria-label="main navigation">
+        <!--NAVIGATION LIST ONE-->
+        <ul class="main__navigation-n1">
+          <li class="navigation--item">
             <a href="#">O&nbsp;nas</a>
           </li>
-          <li class="item">
+          <li class="navigation--item">
             <a href="#offers">Popularne&nbsp;zabiegi</a>
           </li>
-          <li class="item">
+          <li class="navigation--item">
             <a href="#appointment">Konsultacje</a>
           </li>
         </ul>
-        <button class="burger--menu">
-          <i class="fa fa-solid fa-bars"></i>
-        </button>
+        <!--NAVIGATION LIST TWO-->
+        <ul class="main__navigation-n2">
+          <li class="navigation--item">
+            <a href="./sites/pdo.html">Nici PDO </a>
+          </li>
+          <li class="navigation--item">
+            <a href="./sites/peeling.html">PEELINGI CHEMICZNE</a>
+          </li>
+          <li class="navigation--item">
+            <a href="./sites/mezo.html">Mezoterapia</a>
+          </li>
+
+          <li class="navigation--item">
+            <a href="./sites/stymulatory.html">Stymulatory</a>
+          </li>
+        </ul>
+        <!--SOCIAL MEDIA LIST-->
+        <ul class="social__media" aria-label="social media navigation">
+          <li class="social__media--item">
+            <a href="https://www.facebook.com/SkinReviv/"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </li>
+          <li class="social__media--item">
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </li>
+          <li class="social__media--item">
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+          </li>
+        </ul>
       </nav>
+      <!--HERO SECTION-->
       <section class="hero__section">
         <div class="hero--image--wrapper">
           <a href="#appointment" class="hero--appointment">Umów&nbsp;wizytę </a>
@@ -62,126 +176,235 @@
           </div>
         </article>
       </section>
+      <!--MAIN CONTENT-->
       <main>
-        <p>
-          Kupa Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Asperiores, odit fugiat minima magnam laborum, maiores quia ex,
-          ratione dolores natus dicta dolorum eum repellat corrupti dolore quod
-          velit aut consequuntur quos. Magni reprehenderit, nam inventore harum
-          dolores porro facere! Animi, magni accusamus! Eligendi omnis aperiam
-          neque a quasi, molestias, dolor odit unde delectus quae corrupti!
-          Saepe tenetur velit, dolore eveniet sequi illum fugiat, voluptatum
-          cumque eum ipsum praesentium non accusantium sint sed officiis animi
-          tempora quo aspernatur cum, corrupti ratione? Expedita, hic. Enim, ad,
-          illum unde distinctio esse quibusdam minus dolore ut officiis alias
-          deleniti exercitationem id ipsam amet quam repudiandae quis totam cum
-          iure consequatur voluptas tempora velit! Itaque exercitationem quia
-          quos repellat illo ex voluptatibus non nesciunt a inventore aliquam
-          aliquid quas debitis, veritatis, minima ipsa numquam deleniti facere
-          hic sapiente quo? Repellat et illo deserunt, neque totam, corrupti
-          facere atque aperiam eligendi ipsam a eaque? Iure quidem, doloremque
-          tenetur iusto exercitationem perspiciatis voluptatibus modi cumque,
-          perferendis odio minus, necessitatibus consequuntur eveniet eligendi
-          nostrum voluptates. Molestias placeat animi, repudiandae impedit
-          asperiores soluta eius odit! Consequatur perferendis magni asperiores
-          cupiditate sunt consectetur! Fugit amet natus, alias debitis saepe
-          cumque magnam nesciunt. Mollitia quas illum, quidem, sunt fuga veniam
-          pariatur magni voluptates dignissimos assumenda nesciunt vitae
-          delectus ex totam, nemo suscipit dolores possimus. Ex quas nam debitis
-          reiciendis ratione! Modi non natus eaque ullam! Doloremque nulla
-          delectus eveniet? Fugit saepe voluptate sapiente placeat quasi hic?
-          Earum recusandae, incidunt repudiandae quaerat ratione debitis atque
-          eaque id, maiores aperiam doloribus omnis, facilis voluptatum
-          perspiciatis nesciunt itaque dignissimos delectus odio reprehenderit
-          adipisci iure eum officiis exercitationem assumenda? Repellendus atque
-          alias provident reiciendis rerum assumenda ullam laborum voluptates
-          sunt doloribus quam quaerat eius ipsa, odit numquam dicta, culpa quod
-          totam? Eos sit voluptatibus doloribus sequi asperiores vero laudantium
-          eius consectetur, delectus itaque, iusto rem. Dicta pariatur impedit
-          cumque voluptates repellendus harum, natus id perspiciatis dolorum
-          officiis optio possimus modi omnis cum perferendis labore a quae.
-          Debitis accusamus veniam quos dolorum voluptate assumenda provident
-          repellendus? Dolorum doloremque perferendis temporibus expedita iusto
-          odit dolore aut eaque optio in molestias aspernatur magni, pariatur
-          inventore? Ex optio rerum enim cupiditate illo maiores, quas quibusdam
-          laboriosam aliquam, architecto voluptate deserunt, eaque aliquid
-          labore repellat sint tenetur consequuntur libero. Inventore, nihil
-          laborum numquam sed illo reiciendis iure aspernatur minus ducimus.
-          Natus nemo labore exercitationem hic dignissimos repudiandae repellat
-          vitae deserunt soluta dolore minus suscipit corrupti voluptates nam
-          accusantium accusamus, quisquam, consequatur aut nesciunt delectus.
-          Vitae, nihil, omnis ducimus asperiores explicabo temporibus porro
-          pariatur quasi architecto earum voluptas perferendis voluptates
-          voluptatum accusantium, aut dignissimos rerum vero. Obcaecati, id
-          provident amet in dolorem magni. Cum accusantium debitis quidem
-          facilis rerum quos earum. Ex, facilis fuga unde laboriosam voluptate
-          iusto vero? Quod fugit facilis veritatis similique odio! At libero
-          officiis aliquid maxime? Voluptatum dolores in quam ipsum! In labore
-          perspiciatis id distinctio corrupti. Sunt, ab repellat facilis
-          praesentium earum harum soluta rem illo maxime nihil eum minima,
-          veniam, officiis atque modi natus sapiente? Quia, nihil, dignissimos
-          velit laborum possimus saepe illo fugiat ab cumque repudiandae eos! At
-          voluptas voluptatum nisi neque excepturi inventore, non, officiis
-          vitae blanditiis corporis fuga fugit itaque consequuntur consectetur?
-          Quis odio accusamus nemo, repellat eum velit eos sequi saepe quibusdam
-          ratione sed, unde eligendi exercitationem, hic sit architecto sapiente
-          similique debitis. Assumenda inventore aperiam dolorem temporibus
-          soluta illo earum, itaque voluptatem eveniet provident qui, distinctio
-          consequuntur? Inventore quisquam aut, repudiandae optio consectetur
-          fugit iste atque eos eveniet velit mollitia, minima, explicabo veniam!
-          Corporis, nemo fugit consectetur inventore neque veritatis
-          perspiciatis dicta cum voluptas omnis nulla voluptatem. Possimus
-          repudiandae corrupti quisquam quasi saepe, iusto consequatur vitae
-          impedit mollitia ullam itaque nesciunt perspiciatis harum voluptatum
-          tenetur, quas eius minima incidunt voluptas voluptatem error non
-          fugiat! Debitis fugit totam corrupti ex porro voluptas! Ut esse, porro
-          animi facilis harum obcaecati tempora accusamus reprehenderit! Non
-          laborum provident doloremque? Repudiandae, autem magni assumenda
-          voluptas architecto molestiae maxime praesentium nobis ad laudantium
-          et velit reiciendis in minus accusamus ut commodi, ex quos quas
-          perferendis. Temporibus, modi. Nemo eius est amet repellat aperiam
-          repellendus dolor adipisci! Neque magni accusantium ad voluptatibus
-          corrupti tempora provident minima ratione beatae error voluptatem qui
-          consequatur quasi totam laudantium rerum itaque, quae ea illo
-          reprehenderit earum inventore. Veritatis tempore harum ullam itaque
-          laborum quia ipsa eius enim cupiditate nesciunt, rem perferendis
-          expedita reprehenderit hic. Corporis pariatur autem et aut cupiditate
-          iste perferendis doloremque numquam dolorum, ad quasi nisi vitae fuga,
-          unde saepe! Ipsum, quae quasi? Iusto voluptatum dicta sequi esse
-          mollitia, odio sint magni praesentium temporibus cumque delectus qui
-          deserunt, ullam at unde fugit suscipit placeat! Dicta delectus est
-          ducimus tempore itaque quidem beatae, dolorum earum atque laborum cum
-          debitis voluptate iusto nisi nam. Earum, hic, tempora nihil veritatis
-          quidem saepe architecto corporis itaque assumenda aperiam ut incidunt
-          odio dolorem quibusdam. Quo perferendis atque, laudantium ab nemo iste
-          quas aperiam ipsam quisquam vel cupiditate error ratione accusantium
-          magni dolore non? Est eos aliquam velit veritatis amet tempore dolorum
-          deleniti nesciunt, tempora eligendi fuga minus explicabo suscipit
-          iusto qui eum ex consequatur, quos enim placeat perspiciatis?
-          Accusantium aperiam accusamus doloribus iste at ratione libero fugiat
-          velit temporibus enim reiciendis nihil corrupti quae debitis eaque
-          odio, ut iusto maiores facilis harum distinctio quidem sint
-          recusandae! Officiis nostrum soluta quaerat. Minus neque provident
-          laborum laboriosam porro eligendi dignissimos, quibusdam
-          exercitationem, quasi, ullam odio asperiores libero voluptas fuga
-          consequatur facere. Vel vero, sint magnam consequatur reprehenderit
-          consectetur soluta assumenda perspiciatis vitae distinctio cupiditate
-          beatae eaque suscipit animi sed et ex, veritatis provident maxime nam,
-          repellendus tenetur. Voluptatum, facilis? Temporibus molestias
-          eligendi ducimus pariatur ab repudiandae tempora dolor corrupti
-          placeat nisi, voluptatum repellendus illo eaque vitae a hic voluptates
-          possimus? Saepe qui consectetur similique animi officiis laborum quos
-          maiores earum deleniti, accusamus asperiores est dolores suscipit
-          temporibus cupiditate, esse atque, repudiandae inventore possimus fuga
-          fugiat excepturi nobis rerum. Sit doloribus perspiciatis, vero ullam
-          neque consectetur, ab nobis voluptatem necessitatibus alias at id
-          porro! Officia similique, nihil alias illo cumque, iure numquam
-          possimus sed, deserunt dolores sunt? Laudantium, laborum voluptatem
-          asperiores nulla molestias facilis autem architecto animi.
-        </p>
-      </main>
-    </div>
+        <h2 class="offer--title" id="offers">
+          Poznaj Nasze Popularne Zabiegi Estatyczne
+          <strong class="company--name">SKIN&nbsp;Reviv</strong>
+        </h2>
+        <section class="offers">
+          <!--PDO ARTICLE-->
+          <article class="card card--one">
+            <div class="card__header"></div>
+            <div class="card__description__wrapper">
+              <h2 class="card--title">Nici PDO</h2>
+              <p class="card--description">
+                Nić PDO jest syntetycznym włóknem z polikondensatu, które
+                implementuje się do odpowiedniej warstwy skóry, zmuszając ją do
+                pracy. Skutkiem tego jest intensywna produkcja kolagenu, która
+                trwa aż do ich całkowitego rozpuszczenia. Efektem zastosowania
+                nici jest rozjaśnienie i lifting skóry oraz wypłycanie
+                zmarszczek i blizn.
+              </p>
+              <div class="btn__wrapper">
+                <a href="./sites/pdo.html" class="btn btn--secondary"
+                  >Czytaj&nbsp;więcej</a
+                >
+              </div>
+            </div>
+          </article>
+          <!--PEELING ARTICLE-->
+          <article class="card card--two">
+            <div class="card__header"></div>
+            <div class="card__description__wrapper">
+              <h2 class="card--title">PEELINGI CHEMICZNE</h2>
+              <p class="card--description">
+                Zabieg polega na aplikacji substancji chemicznych, które mają za
+                zadanie złuszczenie skóry, powodując jej regenerację i produkcję
+                kolagenu. Dzięki peelingowi skóra staje się nawilżona, napięta,
+                a zmarszczki ulegają wypłycaniu. Wykorzystując peelingi
+                chemiczne możemy efektywnie walczyć z trądzikiem.
+              </p>
+              <div class="btn__wrapper">
+                <a href="./sites/peeling.html" class="btn btn--secondary"
+                  >Czytaj&nbsp;więcej</a
+                >
+              </div>
+            </div>
+          </article>
+          <!--LIPS ARTICLE-->
+          <article class="card card--three">
+            <div class="card__header"></div>
+            <div class="card__description__wrapper">
+              <h2 class="card--title">WYPEŁNIANIE UST</h2>
+              <p class="card--description">
+                Modelowanie ust jest jednym z najczęściej wykonywanych zabiegów
+                estetycznych, do którego używa się usieciowanego kwasu
+                hialuronowego. Dzięki iniekcji kwasu hialuronowego otrzymujemy
+                natychmiastową korektę kształtu ust oraz mocny efekt nawilżenia.
+                Kwas hialuronowy może się utrzymywać w tkankach około 6-12
+                miesięcy ulegając wchłanianiu.
+              </p>
+              <div class="btn__wrapper">
+                <a href="#" class="btn btn--secondary">Czytaj&nbsp;więcej</a>
+              </div>
+            </div>
+          </article>
+          <!--MEZOTHERAPY ARTICLE-->
+          <article class="card card--five">
+            <div class="card__header"></div>
+            <div class="card__description__wrapper">
+              <h2 class="card--title">MEZOTERAPIA</h2>
+              <p class="card--description">
+                Popularny i znanych zabiegów estetycznych. Mezoterapia to zabieg
+                bio rewitalizującym. Polega na iniekcji, do skóry właściwej
+                opracowywanego obszaru, substancji odżywczych w postaci
+                depozytów. Dzięki multiiniekcji wywołujemy w skórze stan
+                zapalny, stymulując tym samym fibroblasty do produkcji elastyny
+                i kolagenu.
+              </p>
+              <div class="btn__wrapper">
+                <a href="./sites/mezo.html" class="btn btn--secondary"
+                  >Czytaj&nbsp;więcej</a
+                >
+              </div>
+            </div>
+          </article>
+          <!--AUTOLOGIC ARTICLE-->
+          <article class="card card--six">
+            <div class="card__header"></div>
+            <div class="card__description__wrapper">
+              <h2 class="card--title">PREPARATY AUTOLOGICZNE</h2>
+              <p class="card--description">
+                Osocze bogatopłytkowe PRP oraz fibrynę bogatopłytkową I-PRF
+                uzyskujemy w procesie odwirowania ludzkiej krwi, pobranej
+                uprzednio ze zgięcia łokciowego. Osocze bogatopłytkowe po
+                podaniu w skórę, w szybkim tempie inicjuje wyrzut czynników
+                wzrostu, które aktywują procesy naprawcze skóry.
+              </p>
+              <div class="btn__wrapper">
+                <a href="./sites/osocze.html" class="btn btn--secondary"
+                  >Czytaj&nbsp;więcej</a
+                >
+              </div>
+            </div>
+          </article>
+          <!--STIMULATOR ARTICLE-->
+          <article class="card card--four">
+            <div class="card__header"></div>
+            <div class="card__description__wrapper">
+              <h2 class="card--title">STYMULATORY</h2>
+              <p class="card--description">
+                Stymulatory tkankowe są preparatami służącymi do odbudowy skóry
+                dzięki podaniu ich w formie iniekcji do skóry właściwej, gdzie
+                następuje proces proliferacji fibroblastów. Dzięki namnożeniu
+                się komórek, zwiększa się produkcja kolagenu i elastyny.
+                Poprawia się napięcie i gęstość skóry.Zabiegi z wykorzystaniem
+                ...
+              </p>
+              <div class="btn__wrapper">
+                <a href="./sites/stymulatory.html" class="btn btn--secondary"
+                  >Czytaj&nbsp;więcej</a
+                >
+              </div>
+            </div>
+          </article>
+        </section>
+        <!--CONTACT AS-->
+        <section id="appointment">
+          <h2 class="offer--title">
+            Umów wizytę lub konsultację w
+            <strong class="company--name">SKIN&nbsp;Reviv</strong>
+          </h2>
+          <article class="card card--seven">
+            <div class="card__header"></div>
+            <div class="card__description__wrapper">
+              <h2 class="card--title">Konsultacje!</h2>
+              <p class="card--description">
+                Podczas konsultacji dowiesz się więcej na temat oferowanych
+                zabiegów. Przeprowadzę szczegółowy wywiad i dobiorę odpowiednią
+                kurację. Otrzymasz odpowiedź na nurtujące Cię pytania i wykluczę
+                ewentualne przeciwwskazania. Zrób pierwszy krok w kierunku
+                zdrowej i pięknej skóry - Skontaktuj się i umów na wizytę.
+              </p>
 
-    <script src="./main.js" defer></script>
+              <p class="card--description">
+                Do zobaczenia!<br />
+                Mgr Katarzyna Ziorko
+              </p>
+
+              <div class="btn__wrapper">
+                <span class="contect--number">
+                  <a href="tel:+48731262134">Kontakt: 731 262 134</a>
+                </span>
+
+                <span class="contect--email"
+                  >Email:<a
+                    class="contect--number"
+                    href="mailto:abc@example.com"
+                    >SkinReviv@gmail.com</a
+                  ></span
+                >
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+      <!--FOOTER SECTION-->
+      <footer class="page__footer" id="page__footer">
+        <h3><a class="footer--title" href="index.html">Skin Reviv</a></h3>
+        <div class="footer__list__wrapper">
+          <!--LIST ONE-->
+          <div class="f1">
+            <h4 class="footer--subtitle">Godziny otwarcia:</h4>
+            <ul class="footer__list--f1">
+              <li class="footer--item">Pon-Pt: 8:00 - 17:00</li>
+              <li class="footer--item">Sob: 8:00 - 13:00</li>
+            </ul>
+          </div>
+          <!--LIST TWO-->
+          <div class="f2">
+            <h4 class="footer--subtitle">Skontaktuj się z nami:</h4>
+            <ul class="footer__list--f2">
+              <li class="footer--item">
+                mgr Katarzyna Ziorko
+                <span class="contect--number">
+                  <a href="tel:+48731262134">731 262 134</a>
+                </span>
+              </li>
+              <li class="footer--item">Orzesze ul. Świętego Wawrzyńca 64</li>
+            </ul>
+          </div>
+
+          <!--LIST THREE-->
+          <div class="f3">
+            <h4 class="footer--subtitle">Współpraca</h4>
+            <ul class="footer__list--f3">
+              <li class="footer--item">
+                <a href="https://kosmetyka-orzesze.pl/">Glam-nails</a>
+              </li>
+              <li class="footer--item">
+                <a href="https://kosmetyka-orzesze.pl/strefa-piekna/"
+                  >Strefa-piekna</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--LIST FOUR-->
+          <div class="f4">
+            <h4 class="footer--subtitle">Znajdź nas też na :</h4>
+            <ul class="footer__list--f5" aria-label="social media navigation">
+              <li class="media--item">
+                <a href="https://www.facebook.com/SkinReviv/"
+                  ><i class="fab fa-facebook-square"></i
+                ></a>
+              </li>
+              <li class="media--item">
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li class="media--item">
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!--COPY RIGHTS-->
+      <div class="copyright">
+        <p class="copyright--description">
+          &copy; Wszelkie prawa zastrzeżone, Design && Code || Olaf Ziorko
+        </p>
+      </div>
+    </div>
   </body>
 </html>
